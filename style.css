@@ -1,0 +1,492 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position: absolute;
+    border: 1px solid black;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.header h1{
+    display: flex;
+    letter-spacing: 100px;
+    font-size: 4.5rem;
+    font-weight: 400;
+    align-items: center;
+    margin-left:5%;
+}
+
+.header .buttons button{
+    display: block;
+    height: 33%;
+}
+
+.header .contact button{
+    height: 100%;
+}
+
+.subheader{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.subheader .infoSubheader{
+    padding-left: 10px;
+    border-right: 1px solid black;
+}
+
+.subheader .infoSubheader h2{
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.subheader .infoSubheader h3{
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+.callAction h4{
+    font-weight: 100;
+    text-decoration: underline;
+    font-size: large;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid black;
+}
+
+.cards .minicards{
+    display: block;
+}
+
+.cards .miniCards .firstSubcard{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.cards .miniCards .firstSubcard .contenido{
+    display: flex;
+    flex-direction: column;
+}
+
+.cards .miniCards .firstSubcard .contenido h4{
+    font-weight: 400;
+}
+
+.cards .miniCards .firstSubcard .buttonFirst{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cards .miniCards .firstSubcard .buttonFirst button{
+    border: 1px solid black;
+    width: 80%;
+    height: 32%;
+}
+
+.cards .subcard .textContent h3{
+    padding: 2%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2.2rem;
+    font-weight: 450;
+    border-top: 1px solid black;
+}
+
+.cards .subcard .subcardContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cards .subcard .subcardContent .miniSubcard{
+    border-top: 1px solid black;
+    padding: 15px;
+    height: 100%;
+    border-right: 1px solid black;
+}
+
+.cards .subcard .subcardContent .miniSubcard .subcardButton{
+    display: flex;
+    justify-content: center;
+}
+.cards .subcard .subcardContent .miniSubcard .subcardButton button{
+    border: 1px solid black;
+    margin: 15px 1px;
+    width: 80%;
+    border-radius: 0%;
+    padding: 4%;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.mobileDescription{
+    display: none;
+}
+
+.webDescription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.webDescription h4{
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.products .miniProducts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.products .miniProducts .productImage{ 
+    display: flex;
+    align-items: center; 
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.products .miniProducts .productImage img{
+    border: 1px solid black;
+    width: 200px;
+    height: 150px;
+}
+
+.products .bigProduct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .bigProduct h3{
+    font-weight: 400;
+    font-size: xx-large;
+}
+
+.prices{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+}
+
+.prices .amount{
+    border: 1px solid black;
+    height: 150px;
+    width: 100%;
+}
+
+.prices .amount h3{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 1.9rem;
+    font-weight: 400;
+}
+
+.prices .amount h4{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.prices .amount .description{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+    align-items:flex-end;
+    font-size: 13px;
+}
+
+.prices .amount .description p{
+    display: flex;
+    justify-content: end;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.video{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border: 1px solid black;
+}
+
+.fullVideo{
+    display: flex;
+    justify-content: center;
+}
+
+.video .fullVideo{
+    border: 1px solid black;
+    background-color: black;
+}
+
+.galery{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.topics{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.topics .doubletopic section{
+    border: 1px solid black;
+    padding: 15px;
+    height: 200px;
+}
+
+.topics .doubletopic section h2{
+    font-weight: 350;
+}
+
+.textDescription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.textDescription h4{
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.doubletopic .readMore {
+    text-decoration: underline;
+}
+
+.team{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.team .teamMate{
+    border: 1px solid black;
+}
+
+.team .teamMate .image{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.team .teamMate .image img{
+    border-radius: 50%;
+}
+
+.team .teamMate .profession{
+    float: left;
+    height: 100%;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.team .teamMate .profession p{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-weight: 500;
+    margin-bottom: 1px;
+}
+
+.forms{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2.5fr;
+    border: 1px solid black;
+}
+
+.socialMedia h4{
+    border-top: 1px solid black;
+    margin-bottom: 0;
+    padding: 25px;
+    font-size: 1.5rem;
+}
+
+form{
+    border-left: 1px solid black;
+    padding: 10px;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+form input{
+    width: 45%;
+    border: 1px solid black;
+    margin-right: 10px;
+    height: 40px;
+}
+
+.textareas{
+    display: flex;
+    justify-content: center;
+}
+
+textarea{
+    border: 1px solid black;
+}
+
+.send{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    margin-right: 3%;
+    height: 42px;
+}
+
+.send button{
+    width: 70px;
+}
+
+@media(max-width:426px){
+    body{
+        border: 1px solid black;
+    }
+.header{
+    display: inline-block;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    
+}
+.header .logo{
+    border: 1px solid black;
+}
+
+.header .logo h1{
+    display: flex;
+    justify-content: center;
+}
+.header .buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header .buttons button{
+    width: 98%;
+    height: 100%;
+}
+
+.header .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.subheader{
+    width: 100%;
+}
+
+.cards{
+    width: 100%;
+}
+
+.products{
+    width: 100%;
+    display: block;
+}
+
+.products .bigProduct{
+    height: 250px;
+}
+
+.products .miniProducts .productImage{
+    display: flex;
+    justify-content: center;
+}
+
+.cards .subcard .subcardContent .miniSubcard{
+    height: 280px;
+}
+
+.products .miniProducts .productImage img{
+    border: 1px solid black;
+    width: 400px;
+    height: 220px;
+}
+
+.prices{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.amount h3{
+    display: flex;
+    justify-content: center;
+}
+
+.video{
+    width: 100%;
+    display: block;
+}
+
+.galery{
+    width: 100%;
+    display: block;
+}
+
+.webDescription{
+    display: none;
+}
+
+.mobileDescription{
+    display: inline;
+}
+
+.topics{
+    width: 100%;
+    display: block;
+}
+
+.team{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.forms{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.socialMedia{
+   display: flex;
+   justify-content: center;
+   border: none;
+}
+
+form .inputs{
+    width: 100%;
+}
+
+}
